@@ -54,6 +54,7 @@ font-style: normal;
 .content-box {
   position: absolute;
   z-index: 0;
+  top: 5em;
 }
 
 .img {
@@ -99,11 +100,15 @@ font-style: normal;
 
 @media only screen and (min-width: 25em) {
   .content {
-    padding-top: 15em;
+    padding-top: 12em;
   }
 
   .body-color {
     letter-spacing: 7px;
+  }
+
+  .content-box {
+    top: 5em;
   }
 }
 
@@ -119,7 +124,7 @@ font-style: normal;
 
 @media only screen and (min-width: 42em) {
   .content {
-    padding-top: 18em;
+    padding-top: 15em;
   }
 
   .body-color {
