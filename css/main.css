@@ -66,7 +66,7 @@ font-style: normal;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  /*padding-top: 20em;*/
+  padding-top: 8em;
 }
 .first-name {
   color: #9abda9;
@@ -82,6 +82,7 @@ font-style: normal;
 
 .body-color {
   color: #fff;
+  letter-spacing: 2px;
 }
 
 .envelopeColor {
@@ -98,13 +99,31 @@ font-style: normal;
 
 @media only screen and (min-width: 25em) {
   .content {
-    padding-top: 12em;
+    padding-top: 15em;
+  }
+
+  .body-color {
+    letter-spacing: 7px;
   }
 }
 
 @media only screen and (min-width: 38em) {
   .content {
     padding-top: 15em;
+  }
+
+  .body-color {
+    letter-spacing: 10px;
+  }
+}
+
+@media only screen and (min-width: 42em) {
+  .content {
+    padding-top: 18em;
+  }
+
+  .body-color {
+    letter-spacing: 10px;
   }
 }
 
