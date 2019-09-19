@@ -1,5 +1,24 @@
-/*Acumin Pro Wide Bold*/
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
 
+html {
+  box-sizing: border-box;
+  background-color: #173A27;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*Acumin Pro Wide Bold*/
+.acumin-wide {
+font-family: acumin-pro-wide, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
 /*Acumin Pro Bold*/
 p {
 font-family: acumin-pro, sans-serif;
@@ -7,63 +26,67 @@ font-weight: 400;
 font-style: normal;
 }
 
-/*Chaparral Pro Display*/
+/*WTR Fatboy Display*/
 .title, h1 {
-font-family: chaparral-pro-display, serif;
-font-weight: 700;
-font-style: normal;
+  font-family: fatboy, serif;
+  font-weight: 400;
+  font-style: normal;
 }
 /*Acumin Pro Bold Italic*/
-
+.acumin-b-i {
 font-family: acumin-pro, sans-serif;
 font-weight: 700;
 font-style: italic;
-
+}
 /*Acumin Pro Italic*/
-
+.acumin-i {
 font-family: acumin-pro, sans-serif;
 font-weight: 400;
 font-style: italic;
-
+}
 /*Acumin Pro Regular*/
-
+.acumin {
 font-family: acumin-pro, sans-serif;
 font-weight: 400;
 font-style: normal;
+}
 
+.content-box {
+  position: absolute;
+  z-index: 0;
+}
 
-/*Chaparral Pro Bold Display*/
+.img {
+  position: absolute;
+  z-index: 1;
+}
 
-font-family: chaparral-pro-display, serif;
-font-weight: 700;
-font-style: normal;
+.content {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /*padding-top: 20em;*/
+}
+.first-name {
+  color: #9abda9;
+}
 
+.last-name-part1 {
+  color: #f2a921;
+}
 
-/*Chaparral Pro Italic Display*/
+.last-name-part2 {
+  color: #e6790a;
+}
 
-font-family: chaparral-pro-display, serif;
-font-weight: 400;
-font-style: italic;
+.body-color {
+  color: #fff;
+}
 
-/*Chaparral Pro Bold Italic Display*/
-
-font-family: chaparral-pro-display, serif;
-font-weight: 700;
-font-style: italic;
-
-/*Chaparral Pro Subhead*/
-
-font-family: chaparral-pro-subhead, serif;
-font-weight: 400;
-font-style: normal;
-
-/*Chaparral Pro Bold Subhead*/
-
-font-family: chaparral-pro-subhead, serif;
-font-weight: 700;
-font-style: normal;
-
-
+.envelopeColor {
+  color:#ba9d23;
+}
 /*Colors*/
 /* Color Theme Swatches in Hex */
 .STANLEY---FREE-ELEGANT-DISPLAY-TYPEFACE-1-hex { color: #01402E; }
@@ -71,3 +94,22 @@ font-style: normal;
 .STANLEY---FREE-ELEGANT-DISPLAY-TYPEFACE-3-hex { color: #F2E529; }
 .STANLEY---FREE-ELEGANT-DISPLAY-TYPEFACE-4-hex { color: #F2A922; }
 .STANLEY---FREE-ELEGANT-DISPLAY-TYPEFACE-5-hex { color: #D97904; }
+
+
+@media only screen and (min-width: 25em) {
+  .content {
+    padding-top: 12em;
+  }
+}
+
+@media only screen and (min-width: 38em) {
+  .content {
+    padding-top: 15em;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .content {
+    padding-top: 20em;
+  }
+}
