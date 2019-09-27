@@ -89,6 +89,11 @@ font-style: normal;
 .envelopeColor {
   color:#ba9d23;
 }
+
+.contact {
+  height: 32px;
+  width: 32px;
+}
 /*Colors*/
 /* Color Theme Swatches in Hex */
 .STANLEY---FREE-ELEGANT-DISPLAY-TYPEFACE-1-hex { color: #01402E; }
